@@ -1,0 +1,17 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0b0c10;
+  --card: #111318;
+  --accent: #7c3aed;
+  --muted: #9aa3b2;
+}
+body{ background: var(--bg); color: #e5e7eb; }
+.container-prose p{ @apply text-gray-300 leading-relaxed; }
+.card{ @apply rounded-2xl bg-[#111318] shadow-xl border border-white/5; }
+.btn{ @apply inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 transition; }
+.btn-primary{ @apply bg-[var(--accent)] hover:brightness-110 text-white; }
+input,select,textarea{ @apply bg-white/5 border border-white/10 rounded-lg p-2 text-sm outline-none focus:border-[var(--accent)]; }
